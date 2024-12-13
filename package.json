@@ -1,0 +1,62 @@
+{
+  "name": "react-speaker-board",
+  "version": "0.0.1",
+  "description": "This is a Recoil-like custom hook library available from React 19 onwards.",
+  "main": "./src/index.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "lint": "pnpm lint:eslint && pnpm lint:prettier",
+    "lint:fix": "pnpm lint:eslint:fix && pnpm lint:prettier:fix",
+    "lint:eslint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
+    "lint:eslint:fix": "eslint --fix 'src/**/*.{js,jsx,ts,tsx}'",
+    "lint:prettier": "pnpm prettier --check './**/*.{js,jsx,ts,tsx,css}'",
+    "lint:prettier:fix": "pnpm prettier --write './**/*.{js,jsx,ts,tsx,css}'",
+    "test": "jest"
+  },
+  "keywords": [
+    "React",
+    "react-speaker-board"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bebeji-nappa/react-speaker-board.git"
+  },
+  "author": "nappa <masa.yanagawa721@gmail.com> (https://twitter.com/bebeji_nappa)",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-react": "^7.26.3",
+    "@types/jest": "^29.5.14",
+    "@types/react-test-renderer": "^19.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.18.0",
+    "@typescript-eslint/parser": "^8.18.0",
+    "babel-jest": "^29.7.0",
+    "eslint": "^9.16.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "jest": "^29.7.0",
+    "prettier": "^3.4.2",
+    "react-test-renderer": "^19.0.0",
+    "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "@react-hook/event": "^1.2.6",
+    "@types/react": "^19.0.1",
+    "@types/react-dom": "^19.0.2",
+    "highlight.js": "^11.10.0",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^2.5.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-virtuoso": "^4.12.3"
+  },
+  "volta": {
+    "node": "22.10.0",
+    "pnpm": "9.12.2"
+  }
+}
