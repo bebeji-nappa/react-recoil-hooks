@@ -14,11 +14,6 @@ export const useRecoilState = <T>(atom: Atom<T> | Selector<T>): [T, (state: T) =
     }
   }, [store, atom.key]);
 
-  useEffect(() => {
-    const getValue = store.get(atom.key) as T;
-    console.log(getValue);
-  }, [store.get(atom.key)]);
-
   const setRecoilState = (state: T) => {
     if (atom.type === "selector" && !atom?.setter) {
       throw new Error("useRecoilState: This state is read-only");
@@ -28,7 +23,6 @@ export const useRecoilState = <T>(atom: Atom<T> | Selector<T>): [T, (state: T) =
       atom.setter(state);
     }
 
-    console.log(store)
     setState(store.get(atom.key) as T);
   };
 

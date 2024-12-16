@@ -7,13 +7,6 @@ export const useAtom = <T>(data: { key: string, default: T }): Atom<T> => {
   const store = useContext(RecoilRootContext);
   const valueRef = useRef(data.default);
   store.set(data.key, data.default);
-  
-  useEffect(() => {
-    const getValue = store.get(data.key) as T;
-    console.log(getValue);
-
-    console.log(store)
-  }, [store.get(data.key)]);
 
   return {
     type: "atom",
