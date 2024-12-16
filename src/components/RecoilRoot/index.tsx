@@ -8,9 +8,5 @@ interface RecoilRootProps {
 
 export const RecoilRoot: React.FC<RecoilRootProps> = ({ children }) => {
   const init = new Map<string, unknown>();
-  return (
-    <RecoilRootContext.Provider value={init}>
-      {children}
-    </RecoilRootContext.Provider>
-  );
-}
+  return <RecoilRootContext.Provider value={init}>{children}</RecoilRootContext.Provider>;
+};

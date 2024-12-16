@@ -4,10 +4,4 @@ import { useAtom } from "./hooks/useAtom";
 import { useSelector } from "./hooks/useSelector";
 import { useRecoilValue } from "./hooks/useRecoilValue";
 
-export {
-  RecoilRoot,
-  useRecoilState,
-  useAtom,
-  useSelector,
-  useRecoilValue,
-}
+export { RecoilRoot, useRecoilState, useAtom, useSelector, useRecoilValue };

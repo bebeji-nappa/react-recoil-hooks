@@ -27,4 +27,4 @@ export const useRecoilState = <T>(atom: Atom<T> | Selector<T>): [T, (state: T) =
   };
 
   return [state, setRecoilState];
-}
+};
